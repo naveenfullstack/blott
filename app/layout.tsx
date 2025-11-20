@@ -26,8 +26,12 @@ export const metadata: Metadata = {
   description: "Stay updated with the latest financial news and market insights from around the world.",
   keywords: ["finance", "news", "market", "stocks", "cryptocurrency"],
   authors: [{ name: "Blott" }],
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#000000",
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#000000',
 };
 
 export default function RootLayout({
@@ -37,11 +41,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.cdnfonts.com" />
-        <link href="https://fonts.cdnfonts.com/css/helvetica-now-display" rel="stylesheet" />
-        <link href="https://fonts.cdnfonts.com/css/albra" rel="stylesheet" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
       >

@@ -8,7 +8,7 @@ import { useIntersectionObserver } from './hooks/useIntersectionObserver';
 
 export default function Home() {
   const { displayedNews, loading, error, hasMore, loadMore } = useNews();
-  
+
   const { lastElementRef } = useIntersectionObserver({
     onIntersect: loadMore,
     enabled: !loading && hasMore,
