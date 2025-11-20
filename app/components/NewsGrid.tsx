@@ -55,7 +55,7 @@ export const NewsGrid = ({
 
     // Show news grid
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[60px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-4 space-y-14 mt-[60px]">
             {news.map((item, index) => {
                 const isLastElement = hasMore && news.length === index + 1;
 
